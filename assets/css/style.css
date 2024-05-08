@@ -21,7 +21,7 @@ section {
   padding: 100px 10px;
 }
 
-#home,
+.home,
 #history,
 #about,
 #facilities,
@@ -35,7 +35,7 @@ section {
   min-height: 40vh;
 }
 
-#home {
+.home {
   background: linear-gradient(
       to right,
       hsla(0, 2%, 17%, 0.655),
@@ -45,7 +45,7 @@ section {
   background-size: cover;
 }
 
-#home h1,
+.home h1,
 #faq h1 {
   font-family: "Lucida Handwriting";
 }
@@ -55,7 +55,7 @@ section {
 }
 
 .high {
-  min-height: 50vh !important;
+  min-height: 45vh !important;
 }
 
 .a-card:hover {
@@ -127,8 +127,7 @@ input:focus {
     border: 1px solid white;
     opacity: 1;
   }
-  #home .row {
-    margin-top: -100px !important;
+  .home .row {
     padding-top: 0px !important;
   }
 
