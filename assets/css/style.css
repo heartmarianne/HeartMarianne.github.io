@@ -1,0 +1,160 @@
+.nav-link {
+  color: whitesmoke !important;
+  opacity: 0.6;
+}
+
+.navbar-brand .logo {
+  opacity: 1;
+}
+
+.navbar-nav .nav-link.active {
+  border-bottom: 1px solid white;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+section {
+  padding: 100px 10px;
+}
+
+#home,
+#history,
+#about,
+#facilities,
+#externalcampuses,
+#faq,
+#reviews {
+  min-height: 100vh;
+}
+
+#footer {
+  min-height: 40vh;
+}
+
+#home {
+  background: linear-gradient(
+      to right,
+      hsla(0, 2%, 17%, 0.655),
+      rgba(44, 42, 42, 0.648)
+    ),
+    url("../img/bg1.jpg") center no-repeat;
+  background-size: cover;
+}
+
+#home h1,
+#faq h1 {
+  font-family: "Lucida Handwriting";
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.high {
+  min-height: 50vh !important;
+}
+
+.a-card:hover {
+  background: #416100;
+  color: white;
+  transition: 0.4s;
+}
+
+.a-card:hover .btn {
+  border: 2px solid white !important;
+  color: white !important;
+  transition: 0.4s;
+}
+
+#facilities,
+#reviews {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      to right,
+      hsla(0, 2%, 17%, 0.655),
+      rgba(44, 42, 42, 0.648)
+    ),
+    url("../img/bg1.jpg");
+}
+
+.accordion-button {
+  color: white !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white !important;
+  background-color: #416100 !important;
+}
+
+.accordion-button:hover {
+  opacity: 0.9;
+}
+
+.accordion-button::after {
+  content: "";
+}
+
+.accordion-button[aria-expanded="true"]::after {
+  content: "";
+}
+
+input {
+  border-radius: 0px !important;
+  border: 2px solid #416100 !important;
+}
+
+input:focus {
+  box-shadow: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  #navbarNav .navbar-nav .nav-item .nav-link {
+    text-align: center;
+  }
+  .navbar-nav .nav-link.active {
+    border: 1px solid white;
+    opacity: 1;
+  }
+  #home .row {
+    margin-top: -100px !important;
+    padding-top: 0px !important;
+  }
+
+  #facilities .row {
+    height: 10vh !important;
+    padding-top: 0px !important;
+  }
+  #facilities .row img {
+    height: 50vh !important;
+    padding-top: 0px !important;
+  }
+
+  #reviews .row {
+    margin-top: -100px !important;
+    padding-top: 0px !important;
+  }
+  #reviews .col-lg-4 {
+    padding-left: 12% !important;
+  }
+
+  #faq .row {
+    margin-top: -50px !important;
+    padding-top: 0px !important;
+  }
+
+  .high {
+    height: 10vh !important;
+  }
+}
